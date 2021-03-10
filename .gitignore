@@ -1,3 +1,12 @@
+sampled/*/processed*
+sampled/*/sampled.smi
+
+output/focused.agent
+output/focused.agent.*
+
+output/promiscuous_processed.csv
+output/processed.feather
+output/processed_fp.npz
 
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,jupyternotebooks,python,vim,macos,linux
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,jupyternotebooks,python,vim,macos,linux

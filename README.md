@@ -51,9 +51,24 @@ conda activate einvent_shared.v2.1
 ~~~~
 From here start a Jupyter Notebook Server and check out the notebooks and their description. 
 
-## TODO
+## Generated Molecules and Fine-Tuned Models
 
-We will add a link to download all 200M sampled smiles, their fingerprint, and descriptors. Also, we'll provide the fine-tuned model for every epoch. Due to file size restrictions in GitHub, this will have to be an external link.
+Due to file size restriction in GitHub we had to deposit the fine-tuned models, the 200M sampled compounds including their fingerprints and descriptors on [Zenodo] (https://zenodo.org/record/4594647/).
+
+You can download the files and unpack them in the this repository by executing:
+
+~~~bash
+cd reinvent-multi-target
+curl -O https://zenodo.org/record/4594647/files/fine_tuned_models.tar.gz
+curl -O https://zenodo.org/record/4594647/files/fingerprints_and_descriptors.tar.gz
+curl -O https://zenodo.org/record/4594647/files/sampled_and_processed_multi_target_compounds.tar.gz
+
+tar -xzvf  fine_tuned_models.tar.gz 
+tar -xzvf  fingerprints_and_descriptors.tar.gz    
+tar -xzvf  sampled_and_processed_multi_target_compounds.tar.gz
+
+rm  fine_tuned_models.tar.gz fingerprints_and_descriptors.tar.gz sampled_and_processed_multi_target_compounds.tar.gz
+~~~
 
 ## Support
 
