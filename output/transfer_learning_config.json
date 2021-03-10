@@ -1,0 +1,36 @@
+{
+    "logging": {
+        "job_id": "na",
+        "job_name": "Transfer Learning Promiscuous Compounds",
+        "logging_path": "/home/ubelix/dcb/capecchi/projects/reinvent-promiscuity/output/progress.log",
+        "recipient": "local",
+        "sender": "http://127.0.0.1"
+    },
+    "parameters": {
+        "adaptive_lr_config": {
+            "average_steps": 4,
+            "gamma": 0.8,
+            "min": 1e-05,
+            "mode": "constant",
+            "patience": 8,
+            "restart_times": 0,
+            "restart_value": 1e-05,
+            "sample_size": 1000,
+            "start": 0.0001,
+            "step": 1,
+            "threshold": 0.0001
+        },
+        "batch_size": 100,
+        "collect_stats_frequency": 99999999,
+        "input_model_path": "/home/ubelix/dcb/capecchi/projects/reinvent-promiscuity/reinvent/data/augmented.prior",
+        "input_smiles_path": "/gpfs/homefs/dcb/capecchi/projects/reinvent-promiscuity/data/pubchem_assay_compounds_processed_training.smi",
+        "num_epochs": 200,
+        "output_model_path": "/home/ubelix/dcb/capecchi/projects/reinvent-promiscuity/output/focused.agent",
+        "randomize": true,
+        "save_every_n_epochs": 1,
+        "standardize": true
+    },
+    "run_type": "transfer_learning",
+    "seed": 1234,
+    "version": 2
+}

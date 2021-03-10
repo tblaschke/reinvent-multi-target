@@ -1,0 +1,13 @@
+{
+    "logging": null,
+    "parameters": {
+        "batch_size": 1000,
+        "model_path": "/gpfs/homefs/dcb/capecchi/projects/reinvent-promiscuity/output/focused.agent.76",
+        "num_smiles": 1000000,
+        "output_smiles_path": "/gpfs/homefs/dcb/capecchi/projects/reinvent-promiscuity/sampled/76/sampled.smi",
+        "with_likelihood": true
+    },
+    "run_type": "sampling",
+    "seed": 1234567890,
+    "version": 2
+}
